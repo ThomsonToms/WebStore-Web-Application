@@ -6,7 +6,7 @@
         body {
             background-color: #181818; /* dark gray */
             color: #e0e0e0; /* light gray */
-            font-family: Arial, sans-serif; /* optional: specify a default font */
+            font-family: Arial, sans-serif; /* specify a default font */
         }
 
         .center-container {
@@ -59,11 +59,11 @@
         input.light-theme, textarea.light-theme, select.light-theme {
             background-color: #ffffff;
             color: #000000;
-            border: 1px solid #aaaaaa; /* adjust as per your preference */
+            border: 1px solid #aaaaaa; 
         }
 
         button.light-theme:hover {
-            background-color: #d0d0d0; /* adjust as per your preference */
+            background-color: #d0d0d0; 
         }
         .center-button-container {
             display: flex;
@@ -75,7 +75,7 @@
             background-color: blue;
         }
 
-        /* Apply red background color to remove button using a class */
+        /* Apply red background color to remove button  */
         .remove-button {
             background-color: red;
         }
@@ -86,14 +86,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 10px;  /* optional: to add some space between each input-container */
+            gap: 10px;  /*to add some space between each input-container */
         }
 
         .input-container {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 10px; /* optional: to add some space between label and input */
+            gap: 10px; /* to add some space between label and input */
         }
 
         .input-container > label {
@@ -102,7 +102,7 @@
 
         .buttons-container {
             display: flex;
-            gap: 10px;  /* optional: to add some space between the two buttons */
+            gap: 10px;  /*  to add some space between the two buttons */
         }
 
     </style>
@@ -242,7 +242,7 @@
                 `;
                 itemList.appendChild(row);
                     }
-                      // Here, add the event listeners for the edit buttons
+                      
                 const editButtons = document.querySelectorAll("[data-edit-id]");
                 editButtons.forEach(button => {
                     button.addEventListener('click', function() {
