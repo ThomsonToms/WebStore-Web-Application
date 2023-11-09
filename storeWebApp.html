@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toms SuperStore</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <button id="toggleTheme" class = "toggle-button">Toggle Theme</button>
+    <div class="center-container">
+    <h1>Toms SuperStore</h1>
+
+    <!-- Form for adding a new item -->
+    <h2>Add New Item</h2>
+    <form id="addItemForm">
+        <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="input-container">
+            <label for="description"> Price of Item:</label>
+            <input type="text" id="description" required>
+        </div>
+        <div class="input-container">
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" required>
+        </div>
+        <div class="center-button-container">
+            <button type="submit">Add Item</button>
+        </div>
+    </form>
+       <!-- Search item by keyword or ID -->
+       <h2>Search Items</h2>
+       <input type="text" id="searchInput" placeholder="Enter keyword or ID">
+       <button id="searchButton">Search</button>
+   
+       <div class="buttons-container">
+           <button id="sortByID">Sort by ID</button>
+           <button id="sortByName">Sort by Name</button>
+       </div>
+   
+       <!-- List of items -->
+       <h2>Items</h2>
+       <table border="1">
+           <thead>
+               <tr>
+                   <th>ID</th>
+                   <th>Name</th>
+                   <th>Price of Item</th>
+                   <th>Image</th>
+                   <th>Action</th>
+               </tr>
+           </thead>
+           <tbody id="itemList">
+               <!-- Item rows will be added dynamically here -->
+           </tbody>
+       </table>
+       
+       </div>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"></script>
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
