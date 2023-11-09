@@ -1,0 +1,103 @@
+
+    
+        body {
+            background-color: #181818; /* dark gray */
+            color: #e0e0e0; /* light gray */
+            font-family: Arial, sans-serif; /* specify a default font */
+        }
+
+        .center-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0; 
+        }
+
+        button {
+            margin: 10px;
+            background-color: #333333; /* slightly darker than body background */
+            color: #ffffff; /* white */
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #444444; /* slightly lighter for hover effect */
+        }
+
+        input, textarea, select {
+            background-color: #333333; 
+            color: #ffffff; 
+            border: 1px solid #555555; 
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #555555;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Add styles for light theme */
+        body.light-theme {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        input.light-theme, textarea.light-theme, select.light-theme {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #aaaaaa; 
+        }
+
+        button.light-theme:hover {
+            background-color: #d0d0d0; 
+        }
+        .center-button-container {
+            display: flex;
+            justify-content: center; /* Horizontally center the button */
+            align-items: center;     /* Vertically center the button */
+            height: 5vh;           /* Take full viewport height */
+        } button {
+            background-color: blue;
+        }
+
+        /* Apply red background color to remove button  */
+        .remove-button {
+            background-color: red;
+        }
+        .toggle-button {
+            background-color: purple;
+        }
+        #addItemForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;  /*to add some space between each input-container */
+        }
+
+        .input-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px; /* to add some space between label and input */
+        }
+
+        .input-container > label {
+            width: 150px;  /* Set a fixed width for labels to ensure alignment */
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 10px;  /*  to add some space between the two buttons */
+        }
+
+   
