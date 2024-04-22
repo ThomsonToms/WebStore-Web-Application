@@ -3,7 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
 import * as firebaseDatabase from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js";
 
-// Your web app's Firebase configuration and the rest of your script
+//  web app's Firebase configuration (deprecated)
 const firebaseConfig = {
     apiKey: "AIzaSyC0ZvnYHwvcWiyKRtg_026ZMswZLLQiPQc",
     authDomain: "wproj2-4a1fa.firebaseapp.com",
